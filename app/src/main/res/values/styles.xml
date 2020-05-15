@@ -1,0 +1,120 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Greeting_User_Text_Appearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/default_font_color</item>
+        <item name="lineHeight">21sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+    </style>
+
+    <style name="User_profile_summary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/default_font_color</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+    </style>
+
+    <style name="Urgency_message">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+    </style>
+
+    <style name="Fixed_Icons">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="Custom_Card_View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/card_top_margin</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+
+    <style name="Gift_Selection_Card_View">
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+
+    <style name="Gift_Selection_Card_Text_Appearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="lineHeight">21sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Gift_Selection_Card_Text_View">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="Gift_Selection_Redeem_Button_View">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:background">@drawable/redeem_button_view</item>
+    </style>
+
+    <style name="Gift_Selection_Redeem_Button_Text_Appearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="lineHeight">14sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Gift_Selection_Redeem_Card_Image_View">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="Gift_Selection_Card_Text_View_2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:background">@drawable/gift_voucher_price_tag</item>
+    </style>
+
+    <style name="Gift_Selection_Card_Text_View_2_Text_Appearance">
+        <item name="android:textSize">18sp</item>
+        <item name="lineHeight">21sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/iconBackground</item>
+    </style>
+
+
+
+
+</resources>
+

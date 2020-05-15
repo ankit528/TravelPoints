@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/menu_item_background"
+        app:itemTextColor="@color/menu_item_background"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="HardcodedText">
+
+            <androidx.cardview.widget.CardView
+                style="@style/Custom_Card_View"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_image"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="Users Image"
+                            android:src="@drawable/chow" />
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Hi, Stephen"
+                            android:textAppearance="@style/Greeting_User_Text_Appearance" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/Fixed_Icons"
+                            android:contentDescription="Users Travel Count"
+                            android:src="@mipmap/ic_megaphone_round" />
+
+                        <TextView
+                            android:id="@+id/travelled_distance"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:text="You have travelled\n320 KM so far"
+                            android:textAppearance="@style/User_profile_summary" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/Fixed_Icons"
+                            android:layout_marginStart="5dp"
+                            android:contentDescription="earned rewards"
+                            android:src="@mipmap/ic_money_flat_round" />
+
+                        <TextView
+                            android:id="@+id/earned_so_far"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:text="You have earned 15k points"
+                            android:textAppearance="@style/User_profile_summary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/Fixed_Icons"
+                            android:contentDescription="redeemed"
+                            android:src="@mipmap/ic_rewards_round" />
+
+                        <TextView
+                            android:id="@+id/redeemed_so_far"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="You have redeemed 1k out of Total 15K points"
+                            android:textAppearance="@style/User_profile_summary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/Custom_Card_View"
+                app:cardBackgroundColor="@color/iconBackground"
+                app:cardCornerRadius="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="redeem"
+                        android:src="@mipmap/ic_redeem_points_round" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:text="you will unlock your first premium voucher if you travel 50 KM more this week."
+                        android:textAppearance="@style/Urgency_message" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/Custom_Card_View"
+                android:layout_marginBottom="@dimen/card_top_margin"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            style="@style/Fixed_Icons"
+                            android:contentDescription="redeem"
+                            android:src="@mipmap/ic_what_we_offer_round" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="See, what we offer you for your redemptions."
+                            android:textAppearance="@style/Greeting_User_Text_Appearance" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/gift_card_1"
+                            style="@style/Gift_Selection_Card_View"
+                            app:cardBackgroundColor="@color/iconBackground">
+
+                            <TextView
+                                android:id="@+id/gift_voucher_text_1"
+                                style="@style/Gift_Selection_Card_Text_View"
+                                android:text="@string/gift_voucher"
+                                android:textAppearance="@style/Gift_Selection_Card_Text_Appearance" />
+
+                            <TextView
+                                style="@style/Gift_Selection_Card_Text_View_2"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:text="Rs. 100"
+                                android:textAppearance="@style/Gift_Selection_Card_Text_View_2_Text_Appearance" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                style="@style/Gift_Selection_Redeem_Card_Image_View"
+                                android:contentDescription="burger king"
+                                android:src="@drawable/ic_burger_king" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/redeem_button_1"
+                            style="@style/Gift_Selection_Redeem_Button_View"
+                            android:layout_below="@id/gift_card_1"
+                            android:text="Redeem Now"
+                            android:textAppearance="@style/Gift_Selection_Redeem_Button_Text_Appearance">
+
+                        </Button>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/gift_card_2"
+                            style="@style/Gift_Selection_Card_View"
+                            android:layout_toEndOf="@id/gift_card_1"
+                            android:foreground="@drawable/ic_loced_gift_card_opacity_50"
+                            android:foregroundGravity="center"
+                            app:cardBackgroundColor="@color/iconBackground">
+
+                            <TextView
+                                style="@style/Gift_Selection_Card_Text_View"
+                                android:text="@string/gift_voucher"
+                                android:textAppearance="@style/Gift_Selection_Card_Text_Appearance" />
+
+                            <TextView
+                                style="@style/Gift_Selection_Card_Text_View_2"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:text="Rs. 200"
+                                android:textAppearance="@style/Gift_Selection_Card_Text_View_2_Text_Appearance" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                style="@style/Gift_Selection_Redeem_Card_Image_View"
+                                android:contentDescription="Amazon"
+                                android:src="@mipmap/ic_amazon_round" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/redeem_button_2"
+                            style="@style/Gift_Selection_Redeem_Button_View"
+                            android:layout_below="@id/gift_card_2"
+                            android:layout_toEndOf="@id/redeem_button_1"
+                            android:text="Redeem 2K"
+                            android:textAppearance="@style/Gift_Selection_Redeem_Button_Text_Appearance">
+
+                        </Button>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/gift_card_3"
+                            style="@style/Gift_Selection_Card_View"
+                            android:layout_toEndOf="@id/gift_card_2"
+                            android:foreground="@drawable/ic_loced_gift_card_opacity_50"
+                            android:foregroundGravity="center"
+                            app:cardBackgroundColor="@color/iconBackground">
+
+                            <TextView
+                                style="@style/Gift_Selection_Card_Text_View"
+                                android:text="@string/gift_voucher"
+                                android:textAppearance="@style/Gift_Selection_Card_Text_Appearance" />
+
+                            <TextView
+                                style="@style/Gift_Selection_Card_Text_View_2"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:text="Rs. 300"
+                                android:textAppearance="@style/Gift_Selection_Card_Text_View_2_Text_Appearance" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                style="@style/Gift_Selection_Redeem_Card_Image_View"
+                                android:contentDescription="Flipkart"
+                                android:src="@mipmap/ic_amazon_round" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/redeem_button_3"
+                            style="@style/Gift_Selection_Redeem_Button_View"
+                            android:layout_below="@id/gift_card_3"
+                            android:layout_toEndOf="@id/redeem_button_2"
+                            android:text="Redeem 5K"
+                            android:textAppearance="@style/Gift_Selection_Redeem_Button_Text_Appearance">
+
+                        </Button>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_toEndOf="@id/gift_card_3"
+                            android:contentDescription="Next"
+                            android:src="@drawable/ic_nav_next" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardBackgroundColor="@color/iconBackground">
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
